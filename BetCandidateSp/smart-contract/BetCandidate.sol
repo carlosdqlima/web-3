@@ -30,8 +30,8 @@ contract BetCandidate {
     address public immutable owner;
     uint immutable fee = 1000;//10% (scale of 4 zeros)
     uint public netPrize;
-    uint immutable betEndTime;
-    uint immutable finishEndTime;
+    uint constant betEndTime = 1728201600.0; //06/10/2024 08h00
+    uint constant finishEndTime = 1730048400.0;  //27/10/2024 17h00
     uint public totalBettors1;
     uint public totalBettors2;
     uint public totalBettors3;
@@ -39,7 +39,7 @@ contract BetCandidate {
     constructor(){
         owner = msg.sender;
         dispute = Dispute({
-            candidate1: "P. Marçal",
+            candidate1: unicode" P. Marçalç",
             candidate2: "G. Boulos",
             candidate3: "R. Nunes",
             image1: "https://bit.ly/4ePysay",
@@ -50,8 +50,6 @@ contract BetCandidate {
             total3: 0,
             winner: 0
         });
-        betEndTime = 1728201600.0.; //06/10/2024 08h00
-        finishEndTime = betEndTime + 1730048400.0.;  //27/10/2024 17h00
     }
 
 
@@ -72,18 +70,6 @@ contract BetCandidate {
         dispute.image1 = _image1;
         dispute.image2 = _image2;
         dispute.image3 = _image3;
-    }
-
-    // Function for changing the end date of bets
-    function setBetEndTime(uint _betEndTime) external onlyOwner {
-        require(block.timestamp < betEndTime, "Betting period already ended");
-        betEndTime = _betEndTime;
-    }
-
-    // Function to change the end date to finalize
-    function setFinishEndTime(uint _finishEndTime) external onlyOwner {
-        require(block.timestamp < finishEndTime, "Finish period already ended");
-        finishEndTime = _finishEndTime;
     }
 
     function bet(uint candidate) external payable {
@@ -126,7 +112,6 @@ contract BetCandidate {
         uint commission = (grossPrize * fee) / 1e4;
         netPrize = grossPrize - commission;
     }
-
 
     bool public commissionWithdrawn;
 
