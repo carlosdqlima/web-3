@@ -1,0 +1,372 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allBets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "candidate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "claimed",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "candidate",
+						"type": "uint256"
+					}
+				],
+				"name": "bet",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "betEndTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claim",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "commissionWithdrawn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dispute",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "candidate1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidate2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidate3",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image3",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "total1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "total2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "total3",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "winner",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "winner",
+						"type": "uint256"
+					}
+				],
+				"name": "finish",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "finishEndTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "netPrize",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_betEndTime",
+						"type": "uint256"
+					}
+				],
+				"name": "setBetEndTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_image1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_image2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_image3",
+						"type": "string"
+					}
+				],
+				"name": "setCandidateImages",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_candidate1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_candidate2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_candidate3",
+						"type": "string"
+					}
+				],
+				"name": "setCandidateNames",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_finishEndTime",
+						"type": "uint256"
+					}
+				],
+				"name": "setFinishEndTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalBettors1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalBettors2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalBettors3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawCommission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BetCandidateSp.sol": "BetCandidate"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BetCandidateSp.sol": {
+			"keccak256": "0x1a5325aa51e806ea02e865745bfb328bcfee9239f8d7af3e5e36ef2fdf105574",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba231c293983b62763ba315b04c151870477640c35684a8f4517209db76d2171",
+				"dweb:/ipfs/QmYpzCAaNuPLB7AQ1NEKYKm4fLxVNNsMRUUyjtJJe4iiJM"
+			]
+		}
+	},
+	"version": 1
+}
