@@ -39,7 +39,7 @@ contract BetCandidate {
     constructor(){
         owner = msg.sender;
         dispute = Dispute({
-            candidate1: unicode" P. Marçalç",
+            candidate1: unicode" P. Marçal",
             candidate2: "G. Boulos",
             candidate3: "R. Nunes",
             image1: "https://bit.ly/4ePysay",
