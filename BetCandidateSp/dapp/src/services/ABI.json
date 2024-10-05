@@ -35,19 +35,6 @@
     {
         "inputs": [
             {
-                "internalType": "uint256",
-                "name": "_betEndTime",
-                "type": "uint256"
-            }
-        ],
-        "name": "setBetEndTime",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
                 "internalType": "string",
                 "name": "_image1",
                 "type": "string"
@@ -92,19 +79,6 @@
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_finishEndTime",
-                "type": "uint256"
-            }
-        ],
-        "name": "setFinishEndTime",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
         "inputs": [],
         "stateMutability": "nonpayable",
         "type": "constructor"
@@ -144,19 +118,6 @@
             {
                 "internalType": "uint256",
                 "name": "claimed",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "betEndTime",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
                 "type": "uint256"
             }
         ],
@@ -228,32 +189,6 @@
             {
                 "internalType": "uint256",
                 "name": "winner",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "fee",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "finishEndTime",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
                 "type": "uint256"
             }
         ],
