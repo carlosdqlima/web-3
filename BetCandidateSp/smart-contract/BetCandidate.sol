@@ -28,10 +28,10 @@ contract BetCandidate {
     mapping(address => Bet) public allBets;
 
     address public immutable owner;
-    uint public fee = 1000;//10% (scale of 4 zeros)
+    uint immutable fee = 1000;//10% (scale of 4 zeros)
     uint public netPrize;
-    uint public betEndTime;
-    uint public finishEndTime;
+    uint immutable betEndTime;
+    uint immutable finishEndTime;
     uint public totalBettors1;
     uint public totalBettors2;
     uint public totalBettors3;
@@ -39,7 +39,7 @@ contract BetCandidate {
     constructor(){
         owner = msg.sender;
         dispute = Dispute({
-            candidate1: "P. Marcal",
+            candidate1: "P. Marçal",
             candidate2: "G. Boulos",
             candidate3: "R. Nunes",
             image1: "https://bit.ly/4ePysay",
@@ -50,8 +50,8 @@ contract BetCandidate {
             total3: 0,
             winner: 0
         });
-        betEndTime = block.timestamp + 1 minutes; 
-        finishEndTime = betEndTime + 1 minutes; 
+        betEndTime = 1728201600.0.; //06/10/2024 08h00
+        finishEndTime = betEndTime + 1730048400.0.;  //27/10/2024 17h00
     }
 
 
