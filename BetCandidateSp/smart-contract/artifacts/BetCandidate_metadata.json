@@ -345,7 +345,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/BetCandidateSp.sol": "BetCandidate"
+			"smart-contract/BetCandidate.sol": "BetCandidate"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -359,7 +359,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/BetCandidateSp.sol": {
+		"smart-contract/BetCandidate.sol": {
 			"keccak256": "0x1a5325aa51e806ea02e865745bfb328bcfee9239f8d7af3e5e36ef2fdf105574",
 			"license": "MIT",
 			"urls": [
